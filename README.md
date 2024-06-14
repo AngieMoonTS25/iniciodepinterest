@@ -35,7 +35,7 @@ Ofreciendo una experiencia de navegacion similar con funcionalidades basicas.
 + **Google icons**: Para iconos personalizados
 
 ### Vista previa del proyecto 
-![Demo](/imagenes/pinterestInterfaz.png)
+![Demo](/imagenes/pinterestInterfaz.PNG)
 
 ### Contacto 
 Angeles Zaragoza: [Mi LinkedIn](https://www.linkedin.com/in/angeles-joana-osorio-zaragoza-b79679298/) 👽
