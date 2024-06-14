@@ -34,5 +34,8 @@ Ofreciendo una experiencia de navegacion similar con funcionalidades basicas.
 + **CSS3**: Para el diseño y estilo, inclyendo _flexbox__ para un diseñi responsivo y efectos de __Hover_.
 + **Google icons**: Para iconos personalizados
 
+### Vista previa del proyecto 
+![Demo](/imagenes/pinterestInterfaz.png)
+
 ### Contacto 
 Angeles Zaragoza: [Mi LinkedIn](https://www.linkedin.com/in/angeles-joana-osorio-zaragoza-b79679298/) 👽
