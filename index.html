@@ -3,263 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--para obtener iconos de google icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Pinterest</title>
-    <link rel="icon" href="/imagenes/Pinterest_Icon.png">
     <link rel="stylesheet" href="estilos.css">
+
+      <!-- Animaciones CSS CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Angie Osorio | Portafolio Web</title>
+  
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="https://pinterest.es/">
-            <img src="imagenes/Pinterest_Icon.png"
-            id="pinterest-icon"></a>
-            <!--Iconos izquierda-->
-            <div class="left-items">
-                <ul class="first-list">
-                    <li><a href="#" id="inicio">Inicio</a></li>
-                    <li><a href="#" id="explorar">Explorar</a></li>
-                    <li><a href="#" id="crear">Crear</a></li>
-                </ul>
-            </div>
+    <!--Barra de navegacion-->
+    <nav>
+        <h1>Angie Osorio</h1>
+        <ul>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li> 
 
-            <!--Barra de busqueda-->
-            <div class="search">
-                <div class="barra">
-                    <span class="material-symbols-outlined" 
-                    id="lupa">
-                    <div>search</div>
-                    <input type="text" placeholder="Buscar"></input>
+        </ul>
+        <button class="burger-menu" id="burger-menu"> 
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!--Sección hero-->
+    <section class="hero" id="about">
+        <img src="images/women-in-tech.png" alt="women in tech" class="hero-img" loading="lazy">
+        <!--Hace una animacion moviendo el texto en x-->
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About me</h2>
+            <p class="bio-text">Hola, soy Angeles Osorio y actualmeente estoy desarrolando un sistema gestor documental que se implementara en una área pequeña una institucion de imparticion de justicia utilizando las herramientas de desarrollo de sitios web como lo es html y php implementando una base de datos desde MysqlAdmin.</p>
+        </div>
+    </section>
+
+    <!--About me-->
+    <section class="more-about">
+        <h2>More about me</h2>
+        <p>Soy ingenieria en computacion, estudie en la universidad autonoma del estado de mexico donde trabaje con elementos de realidad virtual desarrollando aplicaciones moviles en unity</p>
+        <p>Algunas de las aplicaciones que tuve la fortuna de desarrollar con mis compañeros de carrera resaltan en ser enfocadas a la historia mexicana como lo es una aplicacion para el dia de muuertos y otra de realidad virtual sobre el arte con autores princopalmente mexicanos. </p>
+        <p>Di algunas clases sobre la creacion de paginas web en el año 2022 por parte del programa de Technolochicas que busca incursionar a las jovenes en las carreras STEM y desarrollar su interes para se enfoquen en estudiar  estas carreras</p>
+    </section>
+
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My top skills </h2>
+            <div class="skills-wrapper">
+                <!--La parte de animate pulse realiza la animacion de las imagenes como si respirara-->
+                <div class="first-set animate__animated animate__pulse">
+                    <img src="images/icons8-html-5.svg" alt="HTML5"
+                    loading="lazy" class="icon icon-card">
+
+                    <img src="images/icons8-css3.svg" alt="CSS3"                     loading="lazy" class="icon icon-card">
+                    
+                    <img src="images/icons8-javascript.svg" alt="JavaScript"                     loading="lazy" class="icon icon-card">
+                </div>
+                <div class="second-set animate__animated animate__pulse">
+                    <img src="images/icons8-bootstrap.svg" alt="bootstrap"                     loading="lazy" class="icon icon-card"> 
+
+                    <img src="images/icons8-github-50.svg" alt="Git"                     loading="lazy" class="icon icon-card">
+
+                    <img src="images/icons8-react-native.svg" alt="React"                     loading="lazy" class="icon icon-card">
                 </div>
             </div>
+    </section>
 
-            <!--Iconos derecha-->
-            <div class="right-items">
-                <span class="material-symbols-outlined">notifications</span>
-                <span class="material-symbols-outlined">sms</span>
-                <span class="material-symbols-outlined">account_circle</span>
-                <span class="material-symbols-outlined">expand_more</span>
-            </div>
-        </nav>
-    </header>
-
-
-    <main class="contenido">
-        <div class="imagenes">
-
-            <div class="card-image">
-                <img src="imagenes/1.jpg" alt="imagen 1" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
+    <!--Proyectos-->
+    <section class="projects" id="projects">
+        <h2 class="Projects-title">Some of my recent projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="images/project1.png" alt="" loading="lazy" class="project-pic">
+                <h3 class="project-title">Interfaz de pinterest</h3>
+                <p class="project-details">ste proyecto es un clon de la interfaz de inicio de Pinterest creado puramente con CSS3</p>
+                <a href="#" target="_blank" class="project-link">Check it out!</a>
             </div>
 
-            <div class="card-image">
-                <img src="imagenes/2.jpg" alt="imagen 2" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
+            <div class="project-container project-card">
+                <img src="images/workinpogress.jpg" alt="" loading="lazy" class="project-pic">
+                <h3 class="project-title">Project 2</h3>
+                <p class="project-details">Project Description</p>
+                <a href="#" target="_blank" class="project-link">Stay tuned!</a>
             </div>
 
-            <div class="card-image">
-                <img src="imagenes/3.jpg" alt="imagen 3" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
+            <div class="project-container project-card">
+                <img src="images/workinpogress.jpg" alt="" loading="lazy" class="project-pic">
+                <h3 class="project-title">Project 3</h3>
+                <p class="project-details">Project Description</p>
+                <a href="#" target="_blank" class="project-link">Stay tuned!</a>
             </div>
-
-            <div class="card-image">
-                <img src="imagenes/4.jpg" alt="imagen 4" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div> 
-
-            <div class="card-image">
-                <img src="imagenes/5.jpg" alt="imagen 5" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/6.jpg" alt="imagen 6" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/7.jpg" alt="imagen 7" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/8.jpg" alt="imagen 8" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/9.jpg" alt="imagen 9" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/10.jpg" alt="imagen 10" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/11.jpg" alt="imagen 11" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/12.jpg" alt="imagen 12" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/13.jpg" alt="imagen 13" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/14.jpg" alt="imagen 14" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/15.jpg" alt="imagen 15" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/16.jpg" alt="imagen 16" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/17.jpg" alt="imagen 17" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/18.jpg" alt="imagen 18" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/19.jpg" alt="imagen 19" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/20.jpg" alt="imagen 20" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/21.jpg" alt="imagen 21" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/22.jpg" alt="imagen 22" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/23.jpg" alt="imagen 23" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div> 
-
-            <div class="card-image">
-                <img src="imagenes/24.jpg" alt="imagen 24" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/25.jpg" alt="imagen 25" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/26.jpg" alt="imagen 26" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/27.jpg" alt="imagen 27" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/28.jpg" alt="imagen 28" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/29.jpg" alt="imagen 29" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
-            <div class="card-image">
-                <img src="imagenes/3.jpg" alt="imagen 3" class="img">
-                <button class="button"><a href="#">Guardar</a></button>
-                <span class="material-symbols-outlined oculto-1">upload</span>
-                <span class="material-symbols-outlined oculto-2">more_horiz</span>
-            </div>
-
         </div>
-    </main>
+    </section>
+
+    <!--Redes sociales-->
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/angeles-joana-osorio-zaragoza-b79679298/" target="_blank">
+            <img src="icons/icons8-linkedin-24.png" alt="linkedin" loading="lazy" class="socicon"></a>
     
+        <a href="https://github.com/AngieMoonTS25" target="_blank">
+        <img src="icons/icons8-github-24.png" alt="github" loading="lazy" class="socicon"></a>
+    
+        <a href="https://www.instagram.com/angie_moonts/" target="_blank">
+        <img src="icons/icons8-instagram-24.png" alt="instagram" loading="lazy" class="socicon"></a>
+    
+        <a href="https://wa.me/525529429872" target="_blank">
+        <img src="icons/icons8-whatsapp-24.png" alt="whatsapp" loading="lazy" class="socicon"></a>
+                
+    </div>
+
+    <!--Scroll button-->
+   <i class="scroll-up" id="scroll-up">
+    <img src="icons/flecha.gif" class="socicon up-arrow" alt="flecha-arriba">
+   </i>
+
+    <!--Footer-->
+    <footer>
+        <p> Built with { 💜 } by <a href="https://www.linkedin.com/in/angeles-joana-osorio-zaragoza-b79679298/" target="_blank">Angie ✨</a></p>
+    </footer>
+
+    <!--JavaScript conecction-->
+    <script src="app.js"></script>
+
+        <!-- Ion icons scripts -->
+        <script
+         type="module"
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+       ></script>
+       <script
+         nomodule
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+       ></script>
 </body>
 </html>
